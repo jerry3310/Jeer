@@ -1,0 +1,40 @@
+.select {
+  width: 100%;
+  overflow: hidden;
+  .select-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(122, 122, 122, 0.5);
+    padding: 10px 13px 10px 0;
+    .input {
+      width: 100%;
+      padding-left: 11px;
+      display: flex;
+      align-items: center;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: #000;
+
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+  .select-list {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  .select-items {
+    padding-left: 25px;
+    height: 36px;
+    line-height: 36px;
+    color: #000;
+
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(122, 122, 122, 0.5);
+  }
+}

@@ -1,0 +1,160 @@
+.app-contanier {
+  &.event {
+    background: url('@/assets/images/eventbg.png') no-repeat center;
+    background-size: cover;
+    .content {
+      margin-top: 148px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .content-left {
+        position: relative;
+        width: 409px;
+        margin-right: 128px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          height: 65px;
+          line-height: 65px;
+          color: #000;
+          font-size: 60px;
+          font-weight: 400;
+          margin-bottom: 95px;
+        }
+        .info {
+          display: flex;
+          color: #000;
+          text-align: center;
+          font-size: 24px;
+          font-weight: 400;
+          flex-direction: column;
+          align-items: center;
+          .mint {
+            width: 105px;
+            margin: 15px 0;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            border: 0.5px solid rgba($color: #000000, $alpha: 0.5);
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+        .switch-btn {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          bottom: 160px;
+          .left,
+          .rigth {
+            width: 34px;
+            height: 34px;
+          }
+          .left {
+            margin-right: 19px;
+          }
+        }
+      }
+      .content-right {
+        width: 553px;
+        padding-top: 148px;
+      }
+      .images {
+        position: relative;
+        .image-items {
+          position: absolute;
+          width: 360px;
+          height: 366px;
+          padding: 21px 19px 21px 17px;
+          border-radius: 10px;
+          background: #fff;
+          flex-shrink: 0;
+          box-sizing: border-box;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          z-index: 3;
+          .img-box {
+            height: 199px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .img-avt {
+            margin-top: 16px;
+            display: flex;
+            .avt {
+              width: 40px;
+              height: 40px;
+              overflow: hidden;
+              margin-right: 14px;
+              border-radius: 24.5px;
+            }
+            .img-tips {
+              display: flex;
+              flex-direction: column;
+              .tips {
+                font-family: Agrandir;
+                color: #000;
+                font-size: 12px;
+                font-weight: 300;
+                opacity: 0.5;
+              }
+              .jeer-club {
+                color: #06a5ff;
+                font-family: Agrandir;
+                font-size: 12px;
+                font-weight: 300;
+              }
+            }
+          }
+          .more {
+            width: 316px;
+            height: 32px;
+            margin-top: 16px;
+            line-height: 32px;
+            flex-shrink: 0;
+            color: #000;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            border-radius: 10px;
+            background: #f4f5f6;
+          }
+
+          &:nth-of-type(2) {
+            position: absolute;
+            top: 45px;
+            left: -25px;
+            height: 318px;
+            transform-origin: bottom right;
+            transform: rotate(21.608deg);
+            z-index: 2;
+            .img-box {
+              height: 211px;
+            }
+          }
+          &:nth-of-type(3) {
+            position: absolute;
+            top: 25px;
+            left: -10px;
+            width: 360px;
+            height: 318px;
+            transform: rotate(37.496deg);
+            transform-origin: bottom right;
+            z-index: 1;
+            .img-box {
+              height: 211px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Jeer;
+}
+
+img {
+  height: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  &:active {
+    color: #fff;
+  }
+}
+
+.mr15 {
+  margin-right: 15px;
+}
+
+.mr22 {
+  margin-right: 22px;
+}
+
+@font-face {
+  font-family: 'Jeer';
+  font-style: normal;
+  src: local('Jeer'), url(@/assets/fonts/Jeer.ttf) format('truetype');
+}

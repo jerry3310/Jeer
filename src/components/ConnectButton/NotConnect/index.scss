@@ -1,0 +1,14 @@
+.btn-eth {
+  width: 172px;
+  line-height: 27px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 4px;
+  background-color: #000;
+  cursor: pointer;
+  svg {
+    margin: 2px 7px 0 3px;
+  }
+}

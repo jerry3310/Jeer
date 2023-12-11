@@ -1,0 +1,23 @@
+.big-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  .jeers-bg {
+    width: 431px;
+    height: 710px;
+    margin-top: 18px;
+    background: url('@/assets/images/home/jeerbg.png') no-repeat center;
+    background-size: cover;
+  }
+  .text {
+    margin-top: 12px;
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}

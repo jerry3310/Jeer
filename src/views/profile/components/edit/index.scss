@@ -1,0 +1,118 @@
+.profile-dialog {
+  .name {
+    color: #000;
+    text-align: center;
+    font-family: Jeer;
+    font-size: 35px;
+    font-weight: 400;
+  }
+  .edit-items {
+    display: flex;
+    &.account {
+      justify-content: space-between;
+    }
+    &.address {
+      justify-content: space-between;
+    }
+    &.account .value {
+      color: #06a5ff;
+      font-family: Jeer;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    margin-bottom: 23px;
+    .left {
+      display: flex;
+    }
+    .info {
+      margin-left: 24px;
+    }
+    .type {
+      color: rgba(0, 0, 0, 0.33);
+      font-size: 10px;
+      font-weight: 400;
+    }
+    .badge-vector {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .vector {
+        display: flex;
+        border: 0.5px solid #000;
+        border-radius: 2px;
+      }
+    }
+    .check-group {
+      width: 270px;
+      margin-top: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      .check-items {
+        position: relative;
+        width: 68px;
+        height: 20px;
+        margin: 0 19px 20px 0;
+        line-height: 20px;
+        flex-shrink: 0;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 2px;
+        background: linear-gradient(
+          0deg,
+          rgba(78, 78, 78, 0.5) -21.52%,
+          rgba(255, 255, 255, 0) 127.16%
+        );
+        stroke-width: 0.5px;
+        stroke: rgba(255, 255, 255, 0.6);
+        opacity: 0.77;
+        backdrop-filter: blur(2px);
+        font-size: 10px;
+        color: #000;
+        font-size: 10px;
+        font-weight: 400;
+        cursor: pointer;
+        .check {
+          position: absolute;
+          bottom: -5px;
+          right: -5px;
+          width: 10px;
+          height: 10px;
+          background: url('@/assets/images/profile/check.png') no-repeat center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  .btn {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    border-radius: 7px;
+    border: 0.5px solid #000;
+    background: rgba(255, 255, 255, 0);
+    color: #000;
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    .edit-icon {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 12px;
+      background: url('@/assets/images/profile/edit.png') no-repeat center;
+      background-size: cover;
+    }
+  }
+  .update-btn {
+    width: 194px;
+    text-align: center;
+    height: 19px;
+    line-height: 19px;
+    border-radius: 2px;
+    border: 0.5px solid #000;
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+  }
+}
